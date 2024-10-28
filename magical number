@@ -1,0 +1,18 @@
+change the number within the range of 1-n replace 0 with 1, 1 with 2 find the count of elements with odd elements
+n=int(input())
+c=0
+for i in range(1,n+1):
+    x=bin(i)
+    x=x[2:]
+    sum=0
+    for i in range(len(x)):
+        if(x[i]=='0'):
+            sum+=1
+        else:
+            sum+=2
+    if(sum%2==1):
+        c+=1
+print(c)
+output
+5
+2

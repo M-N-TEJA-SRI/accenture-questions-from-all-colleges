@@ -1,0 +1,38 @@
+remove vowels from each string find the maximum permutation that can be done
+#include <iostream>
+using namespace std;
+int factorial(int x){
+    if(x==0||x==1)
+    return 1;
+    else
+    return x*factorial(x-1);
+}
+bool isvowel(char ch){
+    if(ch=='a'||ch=='A'||ch=='e'||ch=='i'||ch=='E'||ch=='I'||ch=='o'||ch=='O'||ch=='u'||ch=='U')
+return true;
+else
+return false;
+    
+}
+int main() {
+    // Write C++ code here
+int n,i,j,x,maxi=0;
+cin>>n;
+string s,t;
+for(i=0;i<n;i++){
+    cin>>s;
+    t="";
+    for(j=0;j<s.length();j++){
+        if(isvowel(s[j])==false)
+        t+=s[j];
+    }
+   x=factorial(t.length());
+   maxi=max(maxi,x);
+}
+cout<<maxi;
+    return 0;
+}
+output
+2
+hello ai
+6

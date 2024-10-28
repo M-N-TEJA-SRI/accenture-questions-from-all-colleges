@@ -1,0 +1,16 @@
+just implement the formula h=height,v,vn are velocities
+#include <iostream>
+#include<cmath>
+using namespace std;
+int main() {
+    // Write C++ code here
+int h,v,vn,e;
+cin>>h>>v>>vn;
+e=v/vn;
+int x=h*(pow(e,2));
+cout<<x;
+    return 0;
+}
+output
+3 2 1
+12

@@ -1,3 +1,4 @@
+Name entry
 this sum you got 0 marks no matter what u did
 a person takes first and last names as input and saves in the format of first name in lower case and last name in upper case 
 s,t=map(str,input().split())

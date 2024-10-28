@@ -1,0 +1,12 @@
+return a string denoting the given number is even or odd in the same order
+li=list(map(int,input().split()))
+s=''
+for i in range(len(li)):
+    if(li[i]%2==0):
+        s+='Even'
+    else:
+        s+='Odd'
+print(s)       
+output
+1 2 3 4 
+OddEvenOddEven

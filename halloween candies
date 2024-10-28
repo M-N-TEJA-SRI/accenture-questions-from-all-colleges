@@ -1,0 +1,29 @@
+A person can buy the multiples of 5 candies at no cost and other candies if cost<=money find the number of candy packets can he buy
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Write C++ code here
+  int n,sum,c=0;
+  cin>>n>>sum;
+  int a[n],i;
+  for(i=0;i<n;i++){
+      cin>>a[i];
+  }
+  for(i=0;i<n;i++){
+      if(a[i]%5==0)
+      c++;
+      else if(sum>0&&sum>=a[i]){
+          sum-=a[i];
+          c++;
+          
+      }
+  }
+  cout<<c;
+    return 0;
+}
+output
+2 10
+5 6
+2

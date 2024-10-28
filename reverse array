@@ -1,0 +1,31 @@
+find the sum of the elements at even indices after reversing the array
+#include <iostream>
+using namespace std;
+int main() {
+    // Write C++ code here
+int n;
+cin>>n;
+int a[n],i,sum=0,j;
+for(i=0;i<n;i++){
+    cin>>a[i];
+   
+}
+i=0,j=n-1;
+while(i<=j){
+    swap(a[i],a[j]);
+    i++;
+    j--;
+}
+for(i=0;i<n;i++){
+    if(i%2==0)
+    sum+=a[i];
+}
+cout<<sum;
+
+
+    return 0;
+}
+output
+4
+1 2 3 4
+6

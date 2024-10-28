@@ -1,0 +1,21 @@
+A junior developer resolved a bug in the software by replacing all zeros with fives
+#include <iostream>
+#include<algorithm>
+using namespace std;
+int main() {
+    // Write C++ code here
+string s;
+cin>>s;
+int i;
+for(i=0;i<s.length();i++){
+    if(s[i]=='0')
+    s[i]='5';
+    
+}
+cout<<s;
+
+    return 0;
+}
+output
+100
+155

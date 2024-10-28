@@ -1,0 +1,11 @@
+file version is given as "file_" find the maximum version of file . If none of the file versions are not there then print -1
+li=list(map(str,input().split()))
+maxi=-1
+for i in range(len(li)):
+    s=li[i]
+    s=s[5:]
+    maxi=max(maxi,int(s))
+print(maxi)    
+output
+file_7 file_8
+8

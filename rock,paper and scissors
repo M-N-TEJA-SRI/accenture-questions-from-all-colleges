@@ -1,0 +1,19 @@
+person a's outcome is given as input so find the outcome of person b such that person b wins.
+rock beats scissors
+scissors beats paper
+paper beats rock
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Write C++ code here
+  string s;
+  cin>>s;
+  if(s=="rock")
+  cout<<"paper";
+  else if(s=="paper")
+  cout<<"scissors";
+  else
+  cout<<"rock";
+    return 0;
+}
